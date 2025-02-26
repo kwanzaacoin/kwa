@@ -15,10 +15,10 @@
         }
     </style>
 </head>
-<body class="container">
+<body>
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav d-flex flex-row"></ul>
             <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
             </li>
@@ -30,16 +30,17 @@
             </li>
         </ul>
     </nav>
-    <img class="center" src="logo250.png"/>
-    <h1 class="text-center my-5">Kwanzaa Coin released by Hassan Clark</h1>
-    <h1 class="my-4">Buy Our Coin</h1>
-    <button id="connectWallet" class="btn btn-primary mb-3">Connect Wallet</button>
-    <div id="accountInfo" class="card p-3 mb-3" style="display: none;">
-        <p>Connected Account: <span id="accountAddress"></span></p>
-        <p>Balance: <span id="accountBalance"></span> ETH</p>
+    <div class="container">
+        <img class="center" src="logo250.png"/>
+        <h1 class="text-center my-5">Kwanzaa Coin released by Hassan Clark</h1>
+        <h1 class="my-4">Buy Our Coin</h1>
+        <button id="connectWallet" class="btn btn-primary mb-3">Connect Wallet</button>
+        <div id="accountInfo" class="card p-3 mb-3" style="display: none;">
+            <p>Connected Account: <span id="accountAddress"></span></p>
+            <p>Balance: <span id="accountBalance"></span> ETH</p>
+        </div>
+        <button id="buyCoin" class="btn btn-success" style="display: none;">Buy Coin</button>
     </div>
-    <button id="buyCoin" class="btn btn-success" style="display: none;">Buy Coin</button>
-
     <script src="app.js"></script>
 </body>
 </html>
