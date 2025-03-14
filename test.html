@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwanzaa Coin</title>
+    <style>
+        body {
+            background-color: #f5e6cc; /* Light beige background to contrast with Kwanzaa colors */
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: #000; /* Black for the navbar */
+            padding: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff; /* White text for contrast */
+        }
+        .navbar button {
+            background-color: #ff0000; /* Red button for AUDIT */
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .navbar button:nth-child(2) {
+            background-color: #008000; /* Green button for WHITEPAPER */
+        }
+        .navbar button:nth-child(3) {
+            background-color: #ff0000; /* Red button for CONNECT WALLET */
+        }
+        .main-content {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+        .kwanzaa-title {
+            font-size: 3em;
+            color: #ff0000; /* Red for emphasis */
+            text-shadow: 2px 2px #008000; /* Green shadow for contrast */
+        }
+        .banner {
+            background: #fff;
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 20px auto;
+            width: 300px;
+            font-weight: bold;
+        }
+        .buy-box {
+            border: 2px solid #000;
+            width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: left;
+            background: #fff;
+        }
+        .buy-box input {
+            width: 100px;
+        }
+        .buy-box button {
+            background-color: #008000; /* Green button */
+            color: #fff;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .kwanzaa-image {
+            width: 200px;
+        }
+        .symbol {
+            position: absolute;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Chapters</a>
+        <a href="#">How To Buy</a>
+        <a href="#">FAQs</a>
+        <a href="#">Staking</a>
+        <a href="#">Claim</a>
+        <button>AUDIT</button>
+        <button>WHITEPAPER</button>
+        <button>CONNECT WALLET</button>
+    </div>
+    <div class="main-content">
+        <h1 class="kwanzaa-title">KWANZAA COIN</h1>
+        <img src="kwanzaa_symbol.png" alt="Kwanzaa Symbol" class="kwanzaa-image">
+        <div class="banner">
+            CELEBRATE UNITY. BUY $KWC!
+            <p>Kwanzaa Coin celebrates unity and community wealth. Join the $KWC family!</p>
+            <p>Kwanzaa Community: Stronger together!</p>
+            <p>$KWC Insights: Trade with purpose!</p>
+            <p>$KWC Picks: Smart cultural investments!</p>
+            <strong>JOIN KWANZAA COMMUNITY</strong>
+        </div>
+        <div class="buy-box">
+            <h3>BUY $KWC TO JOIN THE KWANZAA COMMUNITY!</h3>
+            <p>Your $KWC: 0</p>
+            <label>1 $KWC = $0.0000674</label><br>
+            <label>Pay with:</label>
+            <input type="radio" name="payment" value="ETH"> ETH
+            <input type="radio" name="payment" value="USDT"> USDT
+            <input type="radio" name="payment" value="CARD"> CARD<br>
+            <label>Pay with ETH</label>
+            <input type="number" id="eth-amount" placeholder="0"><br>
+            <label>Receive $KWC</label>
+            <input type="number" id="wepe-amount" placeholder="0"><br>
+            <button>Connect Wallet</button>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.buy-box button').addEventListener('click', () => {
+            alert('Wallet connection functionality would go here!');
+        });
+    </script>
+</body>
+</html>
