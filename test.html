@@ -4,118 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwanzaa Coin</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        /* Custom styles to reflect Kwanzaa theme */
         body {
-            background-color: #f5e6cc; /* Light beige background to contrast with Kwanzaa colors */
-            font-family: Arial, sans-serif;
+            background-color: #f5e6cc; /* Light beige background */
             color: #000;
         }
         .navbar {
-            display: flex;
-            justify-content: space-around;
-            background: #000; /* Black for the navbar */
-            padding: 10px;
+            background-color: #000 !important; /* Black navbar */
         }
-        .navbar a {
-            text-decoration: none;
-            color: #fff; /* White text for contrast */
-        }
-        .navbar button {
-            background-color: #ff0000; /* Red button for AUDIT */
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        .navbar button:nth-child(2) {
-            background-color: #008000; /* Green button for WHITEPAPER */
-        }
-        .navbar button:nth-child(3) {
-            background-color: #ff0000; /* Red button for CONNECT WALLET */
-        }
-        .main-content {
-            position: relative;
-            text-align: center;
-            padding: 20px;
+        .navbar .nav-link {
+            color: #fff !important; /* White text for navbar links */
         }
         .kwanzaa-title {
             font-size: 3em;
             color: #ff0000; /* Red for emphasis */
-            text-shadow: 2px 2px #008000; /* Green shadow for contrast */
+            text-shadow: 2px 2px #008000; /* Green shadow */
         }
         .banner {
-            background: #fff;
             border: 2px solid #000;
-            padding: 10px;
+            padding: 15px;
             margin: 20px auto;
-            width: 300px;
-            font-weight: bold;
+            background-color: #fff;
         }
         .buy-box {
             border: 2px solid #000;
-            width: 300px;
-            margin: 20px auto;
-            padding: 10px;
-            text-align: left;
-            background: #fff;
+            padding: 15px;
+            background-color: #fff;
         }
-        .buy-box input {
-            width: 100px;
+        .btn-custom-red {
+            background-color: #ff0000; /* Red button */
+            color: #fff;
+            border: none;
         }
-        .buy-box button {
+        .btn-custom-green {
             background-color: #008000; /* Green button */
             color: #fff;
             border: none;
-            padding: 5px;
-            cursor: pointer;
         }
         .kwanzaa-image {
             width: 200px;
-        }
-        .symbol {
-            position: absolute;
-            font-size: 1.5em;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Chapters</a>
-        <a href="#">How To Buy</a>
-        <a href="#">FAQs</a>
-        <a href="#">Staking</a>
-        <a href="#">Claim</a>
-        <button>AUDIT</button>
-        <button>WHITEPAPER</button>
-        <button>CONNECT WALLET</button>
-    </div>
-    <div class="main-content">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-around">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Chapters</a>
+                <a class="nav-link" href="#">How To Buy</a>
+                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" href="#">Staking</a>
+                <a class="nav-link" href="#">Claim</a>
+                <button class="btn btn-custom-red">AUDIT</button>
+                <button class="btn btn-custom-green">WHITEPAPER</button>
+                <button class="btn btn-custom-red">CONNECT WALLET</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center">
         <h1 class="kwanzaa-title">KWANZAA COIN</h1>
         <img src="kwanzaa_symbol.png" alt="Kwanzaa Symbol" class="kwanzaa-image">
         <div class="banner">
-            CELEBRATE UNITY. BUY $KWC!
+            <h4>CELEBRATE UNITY. BUY $KWC!</h4>
             <p>Kwanzaa Coin celebrates unity and community wealth. Join the $KWC family!</p>
             <p>Kwanzaa Community: Stronger together!</p>
             <p>$KWC Insights: Trade with purpose!</p>
             <p>$KWC Picks: Smart cultural investments!</p>
-            <strong>JOIN KWANZAA COMMUNITY</strong>
+            <p><strong>JOIN KWANZAA COMMUNITY</strong></p>
         </div>
-        <div class="buy-box">
-            <h3>BUY $KWC TO JOIN THE KWANZAA COMMUNITY!</h3>
+        <div class="buy-box mx-auto" style="max-width: 300px;">
+            <h4>BUY $KWC TO JOIN THE KWANZAA COMMUNITY!</h4>
             <p>Your $KWC: 0</p>
-            <label>1 $KWC = $0.0000674</label><br>
-            <label>Pay with:</label>
-            <input type="radio" name="payment" value="ETH"> ETH
-            <input type="radio" name="payment" value="USDT"> USDT
-            <input type="radio" name="payment" value="CARD"> CARD<br>
-            <label>Pay with ETH</label>
-            <input type="number" id="eth-amount" placeholder="0"><br>
-            <label>Receive $KWC</label>
-            <input type="number" id="wepe-amount" placeholder="0"><br>
-            <button>Connect Wallet</button>
+            <p>1 $KWC = $0.0000674</p>
+            <div class="mb-2">
+                <label>Pay with:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="payment" value="ETH">
+                    <label class="form-check-label">ETH</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="payment" value="USDT">
+                    <label class="form-check-label">USDT</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="payment" value="CARD">
+                    <label class="form-check-label">CARD</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label>Pay with ETH</label>
+                <input type="number" class="form-control" id="eth-amount" placeholder="0">
+            </div>
+            <div class="mb-2">
+                <label>Receive $KWC</label>
+                <input type="number" class="form-control" id="kwc-amount" placeholder="0">
+            </div>
+            <button class="btn btn-custom-green w-100">Connect Wallet</button>
         </div>
     </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         document.querySelector('.buy-box button').addEventListener('click', () => {
             alert('Wallet connection functionality would go here!');
