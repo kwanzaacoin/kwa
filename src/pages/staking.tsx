@@ -180,7 +180,64 @@ export default function Staking() {
             </div>
           </TabsContent>
         </Tabs>
+
+      {/* Contract Address Section */}
+      <section className="mb-16">
+        <Card className="border-2 border-primary bg-primary/5">
+          <CardHeader>
+            <CardTitle className="text-center">Kwanzaa Coin is Available to Buy</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col items-center space-y-4">
+              <p className="text-lg font-medium">Contract Address (CA):</p>
+              <code className="rounded-lg bg-primary/10 p-4 font-mono text-primary">
+                6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+              </code>
+            </div>
+          </CardContent>
+        </Card>
       </section>
+>>>>>>> 15d23b8 (feat: add contract address section to staking page)
+    </div>
+=======
+      </section>
+
+      {/* Contract Address Section */}
+      <section className="mb-16">
+        <Card className="border-2 border-primary bg-primary/5">
+          <CardHeader>
+            <CardTitle className="text-center">Kwanzaa Coin is Available to Buy</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col items-center space-y-4">
+              <p className="text-lg font-medium">Contract Address (CA):</p>
+              <code className="rounded-lg bg-primary/10 p-4 font-mono text-primary">
+                6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+              </code>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+    </div>
+=======
+
+      {/* Contract Address Section */}
+      <section className="mb-16">
+        <Card className="border-2 border-primary bg-primary/5">
+          <CardHeader>
+            <CardTitle className="text-center">Kwanzaa Coin is Available to Buy</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col items-center space-y-4">
+              <p className="text-lg font-medium">Contract Address (CA):</p>
+              <code className="rounded-lg bg-primary/10 p-4 font-mono text-primary">
+                6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+              </code>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+>>>>>>> 15d23b8 (feat: add contract address section to staking page)
     </div>
   )
 }
