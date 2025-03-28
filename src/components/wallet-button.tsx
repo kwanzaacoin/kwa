@@ -13,7 +13,8 @@ export function WalletButton() {
         await disconnect()
         toast({
           title: "Wallet Disconnected",
-          description: "Your wallet has been disconnected successfully."
+          description: "Your wallet has been disconnected successfully.",
+          className: "bg-secondary text-white"
         })
       } else {
         const response = await connect()
@@ -27,7 +28,8 @@ export function WalletButton() {
         }
         toast({
           title: "Wallet Connected",
-          description: "Your wallet has been connected successfully."
+          description: "Your wallet has been connected successfully.",
+          className: "bg-primary text-white"
         })
       }
     } catch (error) {
@@ -42,11 +44,31 @@ export function WalletButton() {
   return (
     <Button 
       onClick={handleClick} 
-      className="flex items-center gap-2 bg-primary text-black hover:bg-primary/90"
+      className={`
+        relative flex items-center gap-2 font-medium transition-all duration-200
+        ${connected 
+          ? 'bg-secondary hover:bg-secondary/90 text-white' 
+          : 'bg-primary hover:bg-primary/90 text-white'
+        }
+        transform hover:scale-105 active:scale-95
+        before:absolute before:inset-0 before:border-2
+        ${connected 
+          ? 'before:border-secondary' 
+          : 'before:border-primary'
+        }
+        before:opacity-0 hover:before:opacity-100
+        before:rounded-md before:transition-opacity
+      `}
       size="sm"
     >
-      <Wallet className="h-4 w-4" />
-      {connected ? `${publicKey?.slice(0, 4)}...${publicKey?.slice(-4)}` : "Connect Wallet"}
+      <Wallet className={`h-4 w-4 ${connected ? 'animate-pulse' : ''}`} />
+      {connected ? (
+        <span className="font-mono">
+          {`${publicKey?.slice(0, 4)}...${publicKey?.slice(-4)}`}
+        </span>
+      ) : (
+        "Connect Wallet"
+      )}
     </Button>
   )
 }
