@@ -92,6 +92,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contract Address Announcement */}
+      <section className="px-4 py-12 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+        <div className="mx-auto max-w-4xl">
+          <Card className="border-2 border-primary bg-background/95 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="text-center text-3xl font-bold text-primary">
+                The Kwanzaa Altcoin has been Released!
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="mb-6 text-xl text-foreground/90">
+                Including the DexPaid, here is the contract address:
+              </p>
+              <div className="mx-auto max-w-3xl rounded-lg bg-primary/10 p-6">
+                <code className="text-xl font-mono text-primary break-all">
+                  6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+                </code>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="px-4 py-16 bg-black/50">
         <div className="mx-auto max-w-7xl">
