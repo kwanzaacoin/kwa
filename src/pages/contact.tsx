@@ -25,13 +25,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: "+1 (555) 123-4567",
-    link: "tel:+15551234567"
+    details: "+1 (334) 320-8458",
+    link: "tel:+13343208458"
   },
   {
     icon: MapPin,
     title: "Location",
-    details: "Global Community",
+    details: "Alkebulan",
     link: null
   }
 ]
