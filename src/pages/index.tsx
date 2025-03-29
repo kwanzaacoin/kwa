@@ -64,11 +64,12 @@ export default function Home() {
         <div className="relative z-10">
           <div className="mb-8 inline-block rounded-full bg-primary/10 px-4 py-1.5">
             <span className="text-primary font-semibold">
-              Powered by Solana Blockchain, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+              Powered by Solana Blockchain, Coin 
             </span>
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Welcome to <span className="text-primary">Kwanzaa</span> Coin
+            CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-foreground/80">
             The first cryptocurrency built on the principles of Kwanzaa, empowering our community, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
