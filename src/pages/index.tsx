@@ -1,8 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Coins, Users, LineChart, Shield } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Coins, Users, LineChart, Shield } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import React from "react";
 
 const features = [
   {
@@ -25,15 +26,15 @@ const features = [
     description: "Join early and be part of our expanding ecosystem",
     icon: LineChart
   }
-]
+];
 
 export default function Home() {
   return (
     <div className="bg-background">
-      {/* Hero Section with Images */}
+      {/* Hero Section */}
       <section className="relative px-4 py-20 text-center lg:py-32 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-between px-4 lg:px-8">
-          {/* Left Side - Legends Image */}
+          {/* Left Side Image */}
           <div className="relative h-[500px] w-1/3 transform hover:scale-105 transition-transform duration-500">
             <Image
               src="https://raw.githubusercontent.com/kwanzaacoin/kwa/67cc4746875bd5ba507f22f3e9f26973caa12bfd/legendsrightsize.png"
@@ -46,7 +47,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-background via-primary/10 to-transparent" />
           </div>
           
-          {/* Right Side - Hassan Clark Image */}
+          {/* Right Side Image */}
           <div className="relative h-[500px] w-1/3 transform hover:scale-105 transition-transform duration-500">
             <Image
               src="https://raw.githubusercontent.com/kwanzaacoin/kwa/67cc4746875bd5ba507f22f3e9f26973caa12bfd/h1.jpg"
@@ -60,19 +61,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Content overlay */}
+        {/* Hero Content */}
         <div className="relative z-10">
           <div className="mb-8 inline-block rounded-full bg-primary/10 px-4 py-1.5">
             <span className="text-primary font-semibold">
-              Powered by Solana Blockchain, Coin 
+              Powered by Solana Blockchain
             </span>
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Welcome to <span className="text-primary">Kwanzaa</span> Coin
-            CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-foreground/80">
-            The first cryptocurrency built on the principles of Kwanzaa, empowering our community, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
+            The first cryptocurrency built on the principles of Kwanzaa, empowering our community.
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/how-to-buy">
@@ -93,18 +93,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contract Address Announcement */}
+      {/* Contract Address Section */}
       <section className="px-4 py-12 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
         <div className="mx-auto max-w-4xl">
           <Card className="border-2 border-primary bg-background/95 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-center text-3xl font-bold text-primary">
-                The Kwanzaa Altcoin has been Released!
+                The Kwanzaa Altcoin is Here!
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="mb-6 text-xl text-foreground/90">
-                Including the DexPaid, here is the contract address:
+                Here is the contract address:
               </p>
               <div className="mx-auto max-w-3xl rounded-lg bg-primary/10 p-6">
                 <code className="text-xl font-mono text-primary break-all">
@@ -123,16 +123,16 @@ export default function Home() {
             Why Choose <span className="text-primary">Kwanzaa</span> Coin?
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {features.map((feature) => (
+            {features.map((feature, index) => (
               <Card 
-                key={feature.title} 
+                key={index} 
                 className="bg-background/50 border border-secondary/20 backdrop-blur-sm
                          hover:border-secondary/50 transition-all duration-300
                          transform hover:-translate-y-1"
               >
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                    {React.createElement(feature.icon, { className: "h-6 w-6 text-primary" })}
                   </div>
                   <CardTitle className="mt-4 text-foreground">{feature.title}</CardTitle>
                 </CardHeader>
@@ -156,13 +156,12 @@ export default function Home() {
             Ready to Be Part of Something Greater?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-foreground/80">
-            Be part of the future of decentralized finance while embracing the principles of Kwanzaa
+            Be part of the future of decentralized finance while embracing the principles of Kwanzaa.
           </p>
           <Link href="/how-to-buy">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white
-                       transform hover:scale-105 transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-white transform hover:scale-105 transition-all duration-300"
             >
               Get Started Now
             </Button>
@@ -171,5 +170,5 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary opacity-50" />
       </section>
     </div>
-  )
+  );
 }
