@@ -7,7 +7,7 @@ import Image from "next/image"
 const features = [
   {
     title: "Community Driven",
-    description: "Built on the principles of Kwanzaa, fostering unity and collective growth, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe",
+    description: "Built on the principles of Kwanzaa, fostering unity and collective growth",
     icon: Users
   },
   {
@@ -71,7 +71,7 @@ export default function Home() {
             Welcome to <span className="text-primary">Kwanzaa</span> Coin
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-foreground/80">
-            The first cryptocurrency built on the principles of Kwanzaa, empowering our community
+            The first cryptocurrency built on the principles of Kwanzaa, empowering our community, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/how-to-buy">
