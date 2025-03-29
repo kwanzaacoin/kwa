@@ -7,7 +7,7 @@ import Image from "next/image"
 const features = [
   {
     title: "Community Driven",
-    description: "Built on the principles of Kwanzaa, fostering unity and collective growth",
+    description: "Built on the principles of Kwanzaa, fostering unity and collective growth, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe",
     icon: Users
   },
   {
