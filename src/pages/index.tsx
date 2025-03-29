@@ -64,7 +64,7 @@ export default function Home() {
         <div className="relative z-10">
           <div className="mb-8 inline-block rounded-full bg-primary/10 px-4 py-1.5">
             <span className="text-primary font-semibold">
-              Powered by Solana Blockchain
+              Powered by Solana Blockchain, Coin CA Address: 6xJN7iCP9jpumvgmCU1RBu2WnZsSzEU2Sh2kmn8SrqFe
             </span>
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
