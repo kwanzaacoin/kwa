@@ -37,8 +37,8 @@ export default function Home() {
           {/* Left Side Image */}
           <div className="relative h-[500px] w-1/3 transform hover:scale-105 transition-transform duration-500">
             <Image
-              src="https://raw.githubusercontent.com/kwanzaacoin/kwa/67cc4746875bd5ba507f22f3e9f26973caa12bfd/legendsrightsize.png"
-              alt="Legends"
+              src="https://raw.githubusercontent.com/kwanzaacoin/kwa/42ed5ec6021f2216692b37905e09499569341d3d/book.png"
+              alt="Book"
               fill
               style={{ objectFit: "contain" }}
               className="opacity-75 brightness-150 contrast-125 saturate-150"
