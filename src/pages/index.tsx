@@ -50,7 +50,7 @@ export default function Home() {
           {/* Right Side Image */}
           <div className="relative h-[500px] w-1/3 transform hover:scale-105 transition-transform duration-500">
             <Image
-              src="https://raw.githubusercontent.com/kwanzaacoin/kwa/67cc4746875bd5ba507f22f3e9f26973caa12bfd/h1.jpg"
+              src="https://raw.githubusercontent.com/kwanzaacoin/kwa/6c91bba3c8941d9ff54f4c9b9440ac69b7cedc8d/h2.png"
               alt="Hassan Clark"
               fill
               style={{ objectFit: "contain" }}
