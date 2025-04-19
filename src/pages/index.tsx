@@ -93,6 +93,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Book Promotion Section */}
+<section className="px-4 py-16 bg-background text-center">
+  <div className="mx-auto max-w-3xl">
+    <h2 className="text-3xl font-bold text-primary mb-4">📚 The Book is Released!</h2>
+    <p className="text-foreground/80 mb-8">
+      Dive deeper into the philosophy behind Kwanzaa Coin with <span className="font-semibold">"INCIPIENCE: The Incipient American Sovereignty"</span>.
+    </p>
+    <a 
+      href="https://www.amazon.com/INCIPIENCE-Incipient-American-Sovereignty-Self-Determination-ebook/dp/B0F4ZS8KPL"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block transform hover:scale-105 transition-transform duration-300"
+    >
+      <Image
+        src="https://m.media-amazon.com/images/I/61-SXzsOuPL._SL1280_.jpg"
+        alt="Incipient Book Cover"
+        width={300}
+        height={450}
+        className="rounded shadow-xl mx-auto mb-6"
+      />
+    </a>
+    <a 
+      href="https://www.amazon.com/INCIPIENCE-Incipient-American-Sovereignty-Self-Determination-ebook/dp/B0F4ZS8KPL"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+        Buy Now on Amazon
+      </Button>
+    </a>
+  </div>
+</section>
+
+
       {/* Contract Address Section */}
       <section className="px-4 py-12 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
         <div className="mx-auto max-w-4xl">
