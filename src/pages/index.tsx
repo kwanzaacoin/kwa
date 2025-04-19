@@ -94,6 +94,7 @@ export default function Home() {
       </section>
 
       {/* Book Promotion Section */}
+
 <section className="px-4 py-16 bg-background text-center">
   <div className="mx-auto max-w-3xl">
     <h2 className="text-3xl font-bold text-primary mb-4">📚 The Book is Released!</h2>
@@ -107,7 +108,7 @@ export default function Home() {
       className="inline-block transform hover:scale-105 transition-transform duration-300"
     >
       <Image
-        src="https://m.media-amazon.com/images/I/61-SXzsOuPL._SL1280_.jpg"
+        src="https://raw.githubusercontent.com/kwanzaacoin/kwa/ca323e23284028d6efac60f67630e81e5bbc6106/buybook.jpg"
         alt="Incipient Book Cover"
         width={300}
         height={450}
@@ -125,6 +126,7 @@ export default function Home() {
     </a>
   </div>
 </section>
+
 
 
       {/* Contract Address Section */}
